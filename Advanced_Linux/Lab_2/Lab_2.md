@@ -630,7 +630,7 @@ $  rm *.txt
 А затем протестируем указанные выше примеры:
 
 ```console
-$	sed 's/ВРЕМЯ/& СУТОК' example.txt
+$	sed 's/ВРЕМЯ/& СУТОК/' example.txt
 ```  
 
 ![Картинка](./Screen21.png)
@@ -854,19 +854,19 @@ $ sed '/Кошка/G' example1.txt
 SED может вам помочь в просмотре документов с конкретных строк, например, с 1 по 5 строку:
 
 ```console
-$ sed -n '1,5y' example1.txt
+$ sed -n '1,5p' example1.txt
 ```
 
 Или с 13 по 18:
 
 ```console
-$ sed -n '13,18y' example1.txt
+$ sed -n '13,18p' example1.txt
 ```
 
 Или наоборот, вывести весь файл кроме строк, указанных в команде sed:
 
 ```console
-$ sed -n '1,4d' example1.txt
+$ sed '1,4d' example1.txt
 ```
 
 # AWK или как быстро посмотреть таблицу любого размера
